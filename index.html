@@ -40,7 +40,7 @@
 
   <fieldset>
     <legend>
-  <h3> PROJECT </h3>
+  <h3><u> PROJECTS</u> </h3>
     </legend>
   <ol>
   <li><p>Job Application Form Creation </p>
@@ -53,16 +53,48 @@
   </fieldset>
 
   <h1> 1.Job Application Form Creation </h1>
-  <fieldset>
+ <form autocomplete=on style ='background-color:green;' <fieldset>
     <legend>OBJECTWAYS TECHNOLOGIES</legend>
-    <center> Application for the position of ANALYST</center>
-<label for ='name'> Name:</label>
+    <center style ='background-color:pink'> Application for the position of ANALYST</center>
+<br>
+   <label for ='name'> Name:</label>
     <input type="text" id="name" name="name" placeholder='Enter Your Name'>
-<label for ='mail'> E-Mail ID:</label>
+<br>
+    <label for ='mail'> E-Mail ID:</label>
     <input type="text" id="mail" name="mail" placeholder='Enter Mail ID'>
-<label for ='ph'> Phone No:</label>
-    <input type="text" id="ph" name="ph" placeholder='Enter Phone Number >
-
+<br>
+    <label for ='ph'> Phone No:</label>
+    <input type="text" id="ph" name="ph" placeholder='Enter Phone Number' >
+<br> 
+   <label for='dob'> Date of Birth:</label>
+<input type="date" id="dob" name="dob"  >
+<br> 
+<label for='qualification'> Qualification:</label>
+  <select id='qualification' name='qualification'>
+    
+<option value='be'>BE</option>
+ <option value='me'>ME</option>   
+<option value='bsc'>BSC</option>
+    <option value='msc'>MSC</option>
+  </select>
+   <br>
+   <label for='skills'> Enter Your Skills:</label>
+<textarea name='message' rows='5' cols='30'>
+</textarea>
+<br>
+   
+   <label for='address'> Enter Your Address:</label>
+ <textarea name='message' rows='5' cols='30'>
+ </textarea>
+   <br>
+   <label for='myfile'> Upload Resume:</label>
+<input type="file" id="myfile" name="myfile"  >
+<br> 
+   <center>
+     <button onclick="location.href='success.html'">Submit</button>
+     <input type='reset' value='RESET'
+   </center>
+ </form>
   </fieldset>
 </body>
 </html>
