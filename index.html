@@ -100,10 +100,31 @@
 <input type="file" id="myfile" name="myfile"  >
 <br> 
    <br>
-     <button type='submit' onclick = " location . href = 'success.html' ">Submit</button>
+     <button type='submit' id='myform'>Submit</button>
      <input type='reset' value='RESET'>
    </center>
  </form>
   </fieldset>
+
+
+  
+	<form id="myForm">
+		<input type="submit" value="Submit">
+	</form>
+
+	<script>
+		document.getElementById('myForm').addEventListener('submit', function(event) {
+			event.preventDefault();
+			window.location.href = 'success.html';
+		});
+	</script>
+
+
+ 
+
+
+
+
+  
 </body>
 </html>
