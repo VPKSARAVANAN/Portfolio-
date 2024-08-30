@@ -105,13 +105,16 @@ Iam An Enthusiastic and motivated frontend developer with a passion for crafting
 <input type="file" id="myfile" name="myfile"  >
 <br> 
    <br>
-     <button type='submit' id='myForm'>Submit</button>
+	<form id='myForm'>     
+     <input type='submit' value='Submit'>Submit</button>
      <input type='reset' value='RESET'>
    </center>
+   </form>
  </form>
   </fieldset>
-
-<button type='submit' id='myForm'>Submit</button>
+<form id='myForm'>
+<input type='submit' value='Submit'>Submit</button>
+</form>
 	<script>
 		document.getElementById('myForm').addEventListener('submit', function(event) {
 			event.preventDefault();
